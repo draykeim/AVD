@@ -900,7 +900,7 @@ blue (#0000FF) and yellow (#FFFF00) -->
     }
   </style>
   <div class="blue"></div>
-  <div class="yellow"></div> -->
+  <div class="yellow"></div> 
 
 <!-- 27 Applied Visual Design: Learn about Tertiary Colors
 -->
@@ -913,21 +913,21 @@ raspberry #FF007F-->
 <!-- Change the background-color property of the orange, cyan, and raspberry classes to their respective colors. Make sure to use the hex codes and not the color names.
 
  -->
- <!-- <style>
+  <style>
     body {
       background-color: #FFFFFF;
     }
   
     .orange {
-      background-color: #000000;
+      background-color: #FF7F00;
     }
   
     .cyan {
-      background-color: #000000;
+      background-color: #00FFFF;
     }
   
     .raspberry {
-      background-color: #000000;
+      background-color: #FF007F;
     }
   
     div {
@@ -939,30 +939,30 @@ raspberry #FF007F-->
   
   <div class="orange"></div>
   <div class="cyan"></div>
-  <div class="raspberry"></div> -->
+  <div class="raspberry"></div> 
 
   <!-- 28 Applied Visual Design: Adjust the Color of Various Elements to Complementary Colors
 -->
 <!-- This page will use a shade of teal (#09A7A1) as the dominant color, and its orange (#FF790E) complement to visually highlight the sign-up buttons. Change the background-color of both the header and footer from black to the teal color. Then change the h2 text color to teal as well. Finally, change the background-color of the button to the orange color.
 
  -->
- <!-- <style>
+ <style>
     body {
       background-color: white;
     }
     header {
-      background-color: black;
+      background-color: #09A7A1;
       color: white;
       padding: 0.25em;
     }
     h2 {
-      color: black;
+      color: #09A7A1;
     }
     button {
-      background-color: white;
+      background-color: #FF790E;
     }
     footer {
-      background-color: black;
+      background-color: #09A7A1;
       color: white;
       padding: 0.5em;
     }
@@ -983,7 +983,7 @@ raspberry #FF007F-->
     </article>
   </main>
   <br>
-  <footer>&copy; 2018 FCC Kitchen</footer> -->
+  <footer>&copy; 2018 FCC Kitchen</footer> 
 
 
   <!-- 29 Applied Visual Design: Adjust the Hue of a Color
@@ -1000,21 +1000,21 @@ magenta	hsl(300, 100%, 50%) -->
 <!-- Change the background-color of each div element based on the class names (green, cyan, or blue) using hsl(). All three should have full saturation and normal lightness.
 
  -->
- <!-- <style>
+  <style>
     body {
       background-color: #FFFFFF;
     }
   
     .green {
-      background-color: #000000;
+      background-color: hsl(120, 100%, 50%);
     }
   
     .cyan {
-      background-color: #000000;
+      background-color: hsl(180, 100%, 50%);
     }
   
     .blue {
-      background-color: #000000;
+      background-color: hsl(240, 100%, 50%);
     }
   
     div {
@@ -1032,13 +1032,14 @@ magenta	hsl(300, 100%, 50%) -->
 <!-- All elements have a default background-color of transparent. Our nav element currently appears to have a cyan background, because the element behind it has a background-color set to cyan. Add a background-color to the nav element so it uses the same cyan hue, but has 80% saturation and 25% lightness values to change its tone and shade.
 
  -->
- <!-- <style>
+  <style>
     header {
       background-color: hsl(180, 90%, 35%);
       color: #FFFFFF;
     }
   
     nav {
+      background-color: hsl(180, 80%, 25%);
   
     }
   
@@ -1072,32 +1073,32 @@ magenta	hsl(300, 100%, 50%) -->
         <li><a href="#">Contact</a></li>
       </ul>
     </nav>
-  </header> -->
+  </header> 
 
 <!-- 31 Applied Visual Design: Create a Gradual CSS Linear Gradient
 -->
 <!-- Use a linear-gradient() for the div element's background, and set it from a direction of 35 degrees to change the color from #CCFFFF to #FFCCCC.
 
  -->
- <!-- <style>
+  <style>
     div {
       border-radius: 20px;
       width: 70%;
       height: 400px;
       margin: 50px auto;
-  
+      background: linear-gradient(35deg, #CCFFFF,#FFCCCC);
     }
   
   </style>
   
-  <div></div> -->
+  <div></div> 
 
   <!-- 32 Applied Visual Design: Use a CSS Linear Gradient to Create a Striped Element
 -->
 <!-- Make stripes by changing the repeating-linear-gradient() to use a gradient angle of 45deg, then set the first two color stops to yellow, and finally the second two color stops to black.
 
  -->
- <!-- <style>
+ <style>
 
     div{
       border-radius: 20px;
@@ -1105,28 +1106,28 @@ magenta	hsl(300, 100%, 50%) -->
       height: 400px;
       margin:  50 auto;
       background: repeating-linear-gradient(
-        90deg,
+        45deg,
         yellow 0px,
-        blue 40px,
-        green 40px,
-        red 80px
+        yellow 40px,
+        black 40px,
+        black 80px
       );
     }
   
   </style>
   
-  <div></div> -->
+  <div></div> 
 
 <!-- 33 Applied Visual Design: Create Texture by Adding a Subtle Pattern as a Background Image
 -->
 <!-- Using the url of https://cdn-media-1.freecodecamp.org/imgr/MJAkxbh.png, set the background of the whole page with the body selector.
 
  -->
- <!-- <style>
+  <style>
     body {
-  
+      background: url('https://cdn-media-1.freecodecamp.org/imgr/MJAkxbh.png');
     }
-  </style> -->
+  </style>
   <!-- 34 Applied Visual Design: Use the CSS Transform scale Property to Change the Size of an Element
 -->
 <!-- Increase the size of the element with the id of ball2 to 1.5 times its original size. -->
