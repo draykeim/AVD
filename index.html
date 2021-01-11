@@ -632,7 +632,7 @@ Set the font-weight of the h6 tag to 200. -->
   }
   h4 {
     font-size: 32px;
-    font-weight: ;
+    font-weight: 400;
   }
   h5 {
     font-size: 21px;
@@ -652,26 +652,27 @@ Set the font-weight of the h6 tag to 200. -->
 <!-- Change the value of the font-size property for the paragraph to 16px to make it more visible.
 
  -->
-<!-- <style>
+ <style>
   p {
-
+font-size: 16px;
   }
 </style>
 <p>
   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p> -->
+</p> 
 <!-- 17 Applied Visual Design: Set the line-height of Paragraphs
 -->
 <!-- Add a line-height property to the p tag and set it to 25px.
  -->
-<!-- <style>
+ <style>
   p {
     font-size: 16px;
+    line-height: 25px;
   }
 </style>
 <p>
   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p> -->
+</p> 
 <!-- 18 Applied Visual Design: Adjust the Hover State of an Anchor Tag
 -->
 <!-- Here's the CSS to change the color of the anchor tag to red during its hover state:
@@ -682,37 +683,43 @@ a:hover {
 <!-- The code editor has a CSS rule to style all a tags black. Add a rule so that when the user hovers over the a tag, the color is blue.
 
  -->
-<!-- <style>
+ <style>
   a {
     color: #000;
   }
+  a:hover{
+    color: blue;
+  }
 </style>
-<a href="https://freecatphotoapp.com/" target="_blank">CatPhotoApp</a> -->
+<a href="https://freecatphotoapp.com/" target="_blank">CatPhotoApp</a> 
 <!-- 19 Applied Visual Design: Change an Element's Relative Position
 -->
 <!-- Change the position of the h2 to relative, and use a CSS offset to move it 15 pixels away from the top of where it sits in the normal flow. Notice there is no impact on the positions of the surrounding h1 and p elements. -->
 
 
-<!-- 
+
 <style>
   h2 {
-
+    position: relative;
+    top: 15px;
   }
 </style>
 <body>
   <h1>On Being Well-Positioned</h1>
   <h2>Move me!</h2>
   <p>I still think the h2 is where it normally sits.</p>
-</body> -->
+</body> 
 <!-- 20 Applied Visual Design: Move a Relatively Positioned Element with CSS Offsets
 -->
 <!-- Use CSS offsets to move the h2 15 pixels to the right and 10 pixels up.
 
  -->
-<!-- <head>
+ <head>
 <style>
     h2 {
       position: relative;
+      left: 15px;
+      bottom: 10px;
     }
   </style>
   </head>
@@ -720,15 +727,17 @@ a:hover {
     <h1>On Being Well-Positioned</h1>
     <h2>Move me!</h2>
     <p>I still think the h2 is where it normally sits.</p>
-  </body> -->
+  </body> 
 <!-- 21 Applied Visual Design: Lock an Element to its Parent with Absolute Positioning
  -->
  <!-- Lock the #searchbar element to the top-right of its section parent by declaring its position as absolute. Give it top and right offsets of 50 pixels each. -->
 
 
- <!-- <style>
+  <style>
   #searchbar {
-
+    position: absolute;
+    top: 50px;
+    right: 50px;
   }
   section {
     position: relative;
@@ -752,12 +761,14 @@ a:hover {
 <!-- The navigation bar in the code is labeled with an id of navbar. Change its position to fixed, and offset it 0 pixels from the top and 0 pixels from the left. After you have added the code, scroll the preview window to see how the navigation stays in place.
 
  -->
- <!-- <style>
+  <style>
     body {
       min-height: 150vh;
     }
     #navbar {
-  
+      position: fixed;
+      top: 0px;
+      left: 0px;
   
   
       width: 100%;
@@ -786,19 +797,19 @@ a:hover {
       </nav>
     </header>
     <p>I shift up when the #navbar is fixed to the browser window.</p>
-  </body> -->
+  </body> 
 <!-- 23 Applied Visual Design: Push Elements Left or Right with the float Property
 -->
 <!-- The given markup would work well as a two-column layout, with the section and aside elements next to each other. Give the #left item a float of left and the #right item a float of right.
 -->
- <!-- <head>
+  <head>
     <style>
       #left {
-  
+        float: left;
         width: 50%;
       }
       #right {
-  
+        float: right;
         width: 40%;
       }
       aside, section {
@@ -825,7 +836,7 @@ a:hover {
 <!-- Add a z-index property to the element with the class name of first (the red rectangle) and set it to a value of 2 so it covers the other element (blue rectangle).
 
  -->
- <!-- <style>
+ <style>
     div {
       width: 60%;
       height: 200px;
@@ -835,7 +846,7 @@ a:hover {
     .first {
       background-color: red;
       position: absolute;
-  
+      z-index: 2;
     }
     .second {
       background-color: blue;
@@ -847,21 +858,21 @@ a:hover {
   </style>
   
   <div class="first"></div>
-  <div class="second"></div> -->
+  <div class="second"></div>
 <!-- 25 Applied Visual Design: Center an Element Horizontally Using the margin Property
 -->
 <!-- Center the div on the page by adding a margin property with a value of auto.
 
  -->
- <!-- <style>
+ <style>
     div {
       background-color: blue;
       height: 100px;
       width: 100px;
-  
+      margin: auto;
     }
   </style>
-  <div></div> -->
+  <div></div> 
   <!-- 26 Applied Visual Design: Learn about Complementary Colors
  -->
  <!-- Some examples of complementary colors with their hex codes are:
@@ -872,15 +883,15 @@ blue (#0000FF) and yellow (#FFFF00) -->
  <!-- Change the background-color property of the blue and yellow classes to their respective colors. Notice how the colors look different next to each other than they do compared against the white background.
 
  -->
- <!-- <style>
+  <style>
     body {
       background-color: #FFFFFF;
     }
     .blue {
-      background-color: #000000;
+      background-color: #0000ff;
     }
     .yellow {
-      background-color: #000000;
+      background-color:#FFFF00;
     }
     div {
       display: inline-block;
